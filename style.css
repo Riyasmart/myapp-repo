@@ -492,8 +492,15 @@ section h2 {
   color: #38bdf8;
 }
 
-.contact-item p {
+.contact-item p,
+.contact-item a {
   color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #38bdf8;
 }
 
 .contact-form {
@@ -557,6 +564,10 @@ footer p {
 
 .social-links a:hover {
   transform: scale(1.2);
+}
+
+body.light-theme .contact-item a:hover {
+  color: #06b6d4;
 }
 
 /* Responsive Design */
@@ -685,7 +696,8 @@ body.light-theme .project-card p,
 body.light-theme .arch-step p,
 body.light-theme .timeline-content p,
 body.light-theme .about-text p,
-body.light-theme .contact-item p {
+body.light-theme .contact-item p,
+body.light-theme .contact-item a {
   color: #475569;
 }
 
