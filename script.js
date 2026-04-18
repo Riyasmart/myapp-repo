@@ -161,6 +161,25 @@ function initMobileMenu() {
 
   toggle.addEventListener('click', () => {
     nav.classList.toggle('mobile-menu-open');
+    // Toggle hamburger/close icon
+    const icon = toggle.querySelector('i');
+    if (nav.classList.contains('mobile-menu-open')) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times');
+    } else {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    }
+  });
+
+  // Close mobile menu when a link is clicked
+  nav.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A' && window.innerWidth <= 768) {
+      nav.classList.remove('mobile-menu-open');
+      const icon = toggle.querySelector('i');
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    }
   });
 
   function checkScreenSize() {
@@ -170,6 +189,10 @@ function initMobileMenu() {
     } else {
       toggle.style.display = 'none';
       nav.classList.remove('mobile-menu', 'mobile-menu-open');
+      // Reset icon
+      const icon = toggle.querySelector('i');
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
     }
   }
 
