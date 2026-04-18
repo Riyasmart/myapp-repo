@@ -1,0 +1,10 @@
+echo "Cloning done"
+
+echo "Building Docker image."
+docker build -t devops-portfolio .
+
+echo "Stopping old container."
+docker run -d -p 80:80 devops-portfolio || true
+
+echo "Runninh new container."
+docker run -d -p 80:80 devops-portfolio:latest

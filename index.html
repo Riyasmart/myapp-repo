@@ -3,64 +3,310 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevOps Portfolio</title>
+  <title>Riyasdeen - DevOps Engineer Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/typed.js@2.0.12/lib/typed.min.js"></script>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Riyasdeen</div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </div>
+    </nav>
+  </header>
 
-<header>
-  <h1>Riyasdeen - DevOps Engineer</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section id="about">
-  <div class="card">
-    <h2>About Me</h2>
-    <p>Beginner DevOps Engineer with experience in AWS, CI/CD, and automation.</p>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="card">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>AWS</span>
-      <span>Docker</span>
-      <span>Kubernetes</span>
-      <span>Jenkins</span>
-      <span>Git</span>
-      <span>Linux</span>
-      <span>Python</span>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Riyasdeen</h1>
+      <h2><span id="typed"></span></h2>
+      <p>Building scalable cloud infrastructures and automating deployments</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
     </div>
-  </div>
-</section>
+    <div class="hero-bg">
+      <div class="floating-elements">
+        <div class="cloud"></div>
+        <div class="server"></div>
+        <div class="network"></div>
+      </div>
+    </div>
+  </section>
 
-<section id="projects">
-  <div class="card">
-    <h2>Projects</h2>
-    <p><strong>CI/CD Pipeline</strong> - Jenkins + Docker automation</p>
-    <p><strong>Cloud Deployment</strong> - AWS EC2 + S3</p>
-  </div>
-</section>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Passionate DevOps Engineer with expertise in cloud infrastructure, automation, and continuous integration/deployment. I specialize in building scalable, secure, and efficient systems using modern DevOps practices.</p>
+          <p>With hands-on experience in AWS, Docker, Kubernetes, and CI/CD pipelines, I help teams deliver software faster and more reliably. My focus is on infrastructure as code, monitoring, and optimizing performance.</p>
+          <a href="#" class="btn primary">Download Resume</a>
+        </div>
+        <div class="about-image">
+          <div class="profile-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="contact">
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <button onclick="showMessage()">Say Hello</button>
-    <p id="msg"></p>
-  </div>
-</section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up">
+          <i class="fab fa-aws"></i>
+          <h3>AWS</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fab fa-docker"></i>
+          <h3>Docker</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-cubes"></i>
+          <h3>Kubernetes</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-cog"></i>
+          <h3>Jenkins</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <i class="fab fa-git-alt"></i>
+          <h3>Git</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+          <i class="fab fa-linux"></i>
+          <h3>Linux</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+          <i class="fas fa-code"></i>
+          <h3>Terraform</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 DevOps Portfolio</p>
-</footer>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-image">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>CI/CD Pipeline with Jenkins & Docker</h3>
+          <p>Automated build, test, and deployment pipeline using Jenkins for continuous integration and Docker for containerization.</p>
+          <div class="tech-stack">
+            <span>Jenkins</span>
+            <span>Docker</span>
+            <span>Git</span>
+            <span>AWS</span>
+          </div>
+          <a href="#" class="btn primary">View on GitHub</a>
+        </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>AWS EC2 Deployment with Nginx</h3>
+          <p>Scalable web application deployment on AWS EC2 instances with load balancing and auto-scaling using Nginx as reverse proxy.</p>
+          <div class="tech-stack">
+            <span>AWS EC2</span>
+            <span>Nginx</span>
+            <span>Terraform</span>
+            <span>Ansible</span>
+          </div>
+          <a href="#" class="btn primary">View on GitHub</a>
+        </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <h3>Infrastructure as Code with Terraform</h3>
+          <p>Complete infrastructure provisioning and management using Terraform for multi-cloud environments with modular architecture.</p>
+          <div class="tech-stack">
+            <span>Terraform</span>
+            <span>AWS</span>
+            <span>Azure</span>
+            <span>Docker</span>
+          </div>
+          <a href="#" class="btn primary">View on GitHub</a>
+        </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Monitoring Setup with Prometheus & Grafana</h3>
+          <p>Comprehensive monitoring and alerting system using Prometheus for metrics collection and Grafana for visualization dashboards.</p>
+          <div class="tech-stack">
+            <span>Prometheus</span>
+            <span>Grafana</span>
+            <span>Kubernetes</span>
+            <span>Docker</span>
+          </div>
+          <a href="#" class="btn primary">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- DevOps Architecture Section -->
+  <section id="architecture">
+    <div class="container">
+      <h2>DevOps Architecture</h2>
+      <div class="architecture-diagram">
+        <div class="arch-step" data-aos="fade-right">
+          <i class="fab fa-git-alt"></i>
+          <h3>Source Code</h3>
+          <p>Git Repository</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="arch-step" data-aos="fade-up">
+          <i class="fas fa-cog"></i>
+          <h3>CI/CD</h3>
+          <p>Jenkins Pipeline</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="arch-step" data-aos="fade-up">
+          <i class="fab fa-docker"></i>
+          <h3>Containerization</h3>
+          <p>Docker Build</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="arch-step" data-aos="fade-left">
+          <i class="fas fa-rocket"></i>
+          <h3>Deployment</h3>
+          <p>Kubernetes/AWS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>My Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <h3>Started Learning Linux & Scripting</h3>
+            <p>2022 - Began my DevOps journey with Linux system administration and shell scripting</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <h3>Mastered Docker & Containerization</h3>
+            <p>2023 - Deep dive into containerization technologies and orchestration</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <h3>AWS Cloud Certification</h3>
+            <p>2023 - Achieved AWS Solutions Architect Associate certification</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <h3>CI/CD Pipeline Implementation</h3>
+            <p>2024 - Built automated deployment pipelines using Jenkins and GitLab CI</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <h3>Kubernetes & Microservices</h3>
+            <p>2024 - Deployed and managed containerized applications on Kubernetes clusters</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <h3>Infrastructure as Code</h3>
+            <p>2025 - Implemented IaC using Terraform and Ansible for scalable infrastructure</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>smartriyas407@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <p>www.linkedin.com/in/riyasdeen-a-8a9906216</p>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>s
+            <p>github.com/Riyasmart</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Riyasdeen. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
